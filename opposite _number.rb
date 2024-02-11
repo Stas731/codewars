@@ -4,10 +4,6 @@
 #14: -14
 #-34: 34
 
-def opposite(x)
-    if x
-      -x
-    else 
-      x
-    end
-  end
+def opposite(n)
+  n - (n * 2)
+end

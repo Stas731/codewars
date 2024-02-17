@@ -7,10 +7,8 @@ friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output.
 =end
 
-def friend(friends)
-    friends2 = []
-    for i in friends do
-      friends2 << i if i.size == 4
-      end
-        friends2
+def friend f
+  a = []
+  f.map {|i| i.size == 4 ? a << i : i}
+  a
   end
